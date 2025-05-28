@@ -58,6 +58,16 @@ class GestionnaireContact:
 def main_menu():
 
     mon_gestionnaire = GestionnaireContact()
+
+    while True:
+        print("\n\n========== MENU PRINCIPAL ==========")
+        print("1• Ajouter un contact")
+        print("2• Afficher un contact")
+        print("3• Rechercher un contact")
+        print("4• Modifier un contact")
+        print("5• Supprimer un contact")
+        print("0• Quitter")
+
         
     choix = input("Votre choix : ")
     if choix == "1":
