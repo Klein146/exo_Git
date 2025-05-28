@@ -38,7 +38,10 @@ class GestionnaireContact:
         pass
 
     def shows_all_contact(self):
-        pass
+        print("\n------- Liste de tout les contacts ----\n")
+        for contacts in self.list_de_contact :
+            print(f"full name : {contacts.get_name()} {contacts.get_surname()}\n  Contact : {contacts.get_email()}, {contacts.get_telephone()}\n")
+        return 
 
     def find_contact(self):
         pass
