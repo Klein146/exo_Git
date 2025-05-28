@@ -58,6 +58,7 @@ class GestionnaireContact:
 def main_menu():
 
     mon_gestionnaire = GestionnaireContact()
+    mon_gestionnaire.uploadContact()
 
     while True:
         print("\n\n========== MENU PRINCIPAL ==========")
@@ -69,21 +70,21 @@ def main_menu():
         print("0• Quitter")
 
         
-    choix = input("Votre choix : ")
-    if choix == "1":
-        mon_gestionnaire.add_contact()
-    elif choix == "2":
-        mon_gestionnaire.shows_all_contact() 
-    elif choix == "3":
-        mon_gestionnaire.find_contact()
-    elif choix == "4":
-        mon_gestionnaire.update_already_contact()
-    elif choix == "5":
-        mon_gestionnaire.drop_already_contact()
-    elif choix == "0":
-        print("👋 Au revoir !")
-    else : 
-        print("❌ Choix invalide, veuillez réessayer.")
+        choix = input("Votre choix : ")
+        if choix == "1":
+            mon_gestionnaire.add_contact()
+        elif choix == "2":
+            mon_gestionnaire.shows_all_contact() 
+        elif choix == "3":
+            mon_gestionnaire.find_contact()
+        elif choix == "4":
+            mon_gestionnaire.update_already_contact()
+        elif choix == "5":
+            mon_gestionnaire.drop_already_contact()
+        elif choix == "0":
+            print("👋 Au revoir !")
+        else : 
+            print("❌ Choix invalide, veuillez réessayer.")
 
 
 if __name__ == "__main__":
