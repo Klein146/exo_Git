@@ -56,7 +56,24 @@ class GestionnaireContact:
         pass
 
 def main_menu():
-    pass
+
+    mon_gestionnaire = GestionnaireContact()
+        
+    choix = input("Votre choix : ")
+    if choix == "1":
+        mon_gestionnaire.add_contact()
+    elif choix == "2":
+        mon_gestionnaire.shows_all_contact() 
+    elif choix == "3":
+        mon_gestionnaire.find_contact()
+    elif choix == "4":
+        mon_gestionnaire.update_already_contact()
+    elif choix == "5":
+        mon_gestionnaire.drop_already_contact()
+    elif choix == "0":
+        print("👋 Au revoir !")
+    else : 
+        print("❌ Choix invalide, veuillez réessayer.")
 
 
 if __name__ == "__main__":
