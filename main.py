@@ -34,7 +34,26 @@ class GestionnaireContact:
 
     def __init__(self):
         self.list_de_contact = []
+    def add_contact(self):
+        pass
 
+    def shows_all_contact(self):
+        pass
+
+    def find_contact(self):
+        pass
+
+    def update_already_contact(self):
+        pass
+
+    def drop_already_contact(self):
+        pass
+
+    def saveContact(self):
+        pass
+
+    def uploadContact(self):
+        pass
 
 def main_menu():
     pass
