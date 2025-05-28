@@ -5,6 +5,29 @@ class Contact():
         self.surname = surname.strip().lower()
         self.email = email.strip().lower()
         self.telephone = telephone
+    def get_name(self):
+        return self.name
+
+    def set_name(self, value: str):
+        self.name = value.strip().lower()
+    
+    def get_surname(self):
+        return self.surname
+
+    def set_surname(self, value):
+        self.surname = value.strip().lower()
+
+    def get_email(self):
+        return self.email
+
+    def set_email(self, value):
+        self.email = value.strip().lower()
+
+    def get_telephone(self):
+        return self.telephone 
+
+    def set_telephone(self, value : int):
+        self.telephone = value
 
 
 class GestionnaireContact:
@@ -15,5 +38,7 @@ class GestionnaireContact:
 
 def main_menu():
     pass
+
+
 if __name__ == "__main__":
     main_menu()
